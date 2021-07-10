@@ -1,0 +1,16 @@
+/* utils */
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/placeholders";
+
+/* Base */
+@import "base/fonts";
+@import "base/theme";
+@import "base/animations";
+
+/* Components */
+@import "components/header";
+@import "components/footer";
+
+/* Pages */
+@import "pages/HOMEPAGE/index";

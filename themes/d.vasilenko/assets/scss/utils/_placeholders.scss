@@ -1,0 +1,50 @@
+%container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+
+  @media screen and(max-width: 1024px) {
+    padding: 0 30px;
+  }
+}
+
+%list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%hover-line {
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+
+    background-color: $acent-color;
+    width: 0;
+    border-radius: 10px;
+    border-bottom: 3px solid $acent-color;
+    transition: all 0.5s ease;
+    opacity: 0;
+  }
+
+  &:hover:after {
+    opacity: 1;
+    width: 80%;
+  }
+}
+
+%font-source-h1-h2 {
+  @include font-source($size: 42px, $lh: 52px, $weight: bold);
+
+  @media screen and (max-width: 1024px) {
+    @include font-source($size: 32px, $lh: 44px, $weight: bold);
+  }
+
+  @media screen and (max-width: 480px) {
+    @include font-source($size: 27px, $lh: 38px, $weight: bold);
+  }
+}

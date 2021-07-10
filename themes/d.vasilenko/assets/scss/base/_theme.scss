@@ -1,0 +1,70 @@
+html {
+  scroll-behavior: smooth;
+}
+
+// for body
+.scroll-hidden {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+  color: $text-black-color;
+  font-family: "Montserrat", sans-serif;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255, 0) inset !important;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.is-none {
+  display: none !important;
+}
+
+button[type="submit"],
+input[type="submit"] {
+  -webkit-appearance: none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select:focus,
+  textarea:focus,
+  input:focus {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+
+  @media screen and(max-width: 1024px) {
+    padding: 0 30px;
+  }
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
