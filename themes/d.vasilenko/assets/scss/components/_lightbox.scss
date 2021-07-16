@@ -1,0 +1,137 @@
+/* Lightbox */
+.lightbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  z-index: 999999;
+  pointer-events: none;
+  // transition: opacity $animation-duration $timing-function;
+}
+
+.lightbox.is-open {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.lightbox__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 65px 115px;
+  background: #171717;
+  border: 1px solid #e2b076;
+  transform: scale(0.95);
+  transition: transform $animation-duration $timing-function;
+
+  .description {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 143.4%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+    opacity: 0.7;
+  }
+
+  .wpcf7 {
+    width: 100%;
+  }
+
+  .wpcf7-form p {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
+      font-family: Montserrat, sans-serif;
+      padding: 12px;
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid #ffffff44;
+      background: transparent;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 143.4%;
+      letter-spacing: 0.07em;
+
+      color: #ffffff;
+
+      &::placeholder {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 143.4%;
+        letter-spacing: 0.07em;
+        opacity: 0.7;
+        color: #ffffff;
+      }
+    }
+
+    input[type="submit"] {
+      margin-left: 30px;
+      display: inline-block;
+      padding: 10px;
+      max-width: 250px;
+      width: 100%;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      cursor: pointer;
+    }
+
+    .ajax-loader {
+      display: none;
+    }
+  }
+}
+
+.lightbox.is-open .lightbox__content {
+  transform: scale(1);
+}
+
+.lightbox__button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  // transition: background-color $animation-duration $timing-function;
+  outline: none;
+  background-image: url("../assets/images/svg/icon-close.svg");
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}

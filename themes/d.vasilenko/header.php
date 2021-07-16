@@ -29,7 +29,11 @@
     <link rel="preload" as="font" href="<?= get_template_directory_uri(). '/assets/fonts/Montserrat-Light.ttf' ?>"
         crossorigin>
 
+
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXZ7bM6hDwHCCJFxkyP0nE4iGliyuS_E8&callback=initMap"> -->
+
     <?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -40,11 +44,21 @@
         <header id="masthead" class="site-header">
 
             <div class="container header">
+                <button class="header__button-menu" aria-label="button menu open-close" aria-expanded="false"
+                    aria-controls="navmenu" data-menu-button>
+                    <svg width="30" height="30">
+                        <use href="<?= get_template_directory_uri().'/assets/images/svg/sprite.svg#icon-burger' ?>"
+                            class="icon-menu"></use>
+                        <use href="<?= get_template_directory_uri().'/assets/images/svg/sprite.svg#icon-cross' ?>"
+                            class="cross-icon"></use>
+                    </svg>
+                </button>
+
                 <div class="left-box">
                     <div class="logo-container">
                         <a href="<?= home_url()?>" class="logo-link">
-                            <img src="<?= get_template_directory_uri().'/assets/images/svg/logo.svg' ?>" width="140"
-                                height="48" />
+                            <img src="<?= get_template_directory_uri().'/assets/images/svg/logo.svg' ?>" width="115"
+                                height="84" />
                         </a>
                     </div>
                 </div>
@@ -54,7 +68,7 @@
                     <div class="right-box ">
 
                         <nav id="site-navigation" class="main-navigation" data-menu-inner>
-                            <ul class="header_nav">
+                            <ul class="header_nav list">
 
                                 <?php wp_nav_menu([
 			       				'menu' => 'Header',
@@ -69,15 +83,14 @@
                     </div>
                 </div>
 
-                <button class="header__button-menu" aria-label="button menu open-close" aria-expanded="false"
-                    aria-controls="navmenu" data-menu-button>
-                    <svg width="30" height="30">
-                        <use href="<?= get_template_directory_uri().'/assets/images/svg/sprite.svg#icon-burger' ?>"
-                            class="icon-menu"></use>
-                        <use href="<?= get_template_directory_uri().'/assets/images/svg/sprite.svg#icon-cross' ?>"
-                            class="cross-icon"></use>
+
+                <button class="contact-button__mobile" data-open-form>
+                    <svg class="" width="15" height="15">
+                        <use href="<?= get_template_directory_uri().'/assets/images/svg/sprite.svg#icon-white-tel' ?>">
+                        </use>
                     </svg>
                 </button>
+                <button class="contact-button button" data-open-form>Получить консультацию</button>
             </div>
 
         </header><!-- #masthead -->

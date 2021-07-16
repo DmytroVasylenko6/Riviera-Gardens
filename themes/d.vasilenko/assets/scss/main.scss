@@ -1,9 +1,12 @@
 /* utils */
+// @import "node_modules/modern-normalize/modern-normalize.css";
+
 @import "utils/variables";
 @import "utils/mixins";
 @import "utils/placeholders";
 
 /* Base */
+@import "base/normalize";
 @import "base/fonts";
 @import "base/theme";
 @import "base/animations";
@@ -11,6 +14,10 @@
 /* Components */
 @import "components/header";
 @import "components/footer";
+@import "components/call-sticky";
+@import "components/lightbox";
+@import "components/lightbox2";
+@import "node_modules/swiper/swiper-bundle";
 
 /* Pages */
 @import "pages/HOMEPAGE/index";

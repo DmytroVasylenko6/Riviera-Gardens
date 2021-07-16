@@ -1,0 +1,223 @@
+.section-location {
+  background-image: url("../assets/images/black-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 180px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .left-box,
+    .right-box {
+      flex-basis: 47%;
+    }
+
+    .left-box {
+      .image-container {
+        border: 1px solid #e2b076;
+
+        img {
+          object-fit: cover;
+          height: 100%;
+          position: relative;
+          top: -25px;
+          left: 25px;
+        }
+      }
+    }
+
+    .right-box {
+      .subtitle {
+        margin-top: 15px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 21px;
+        line-height: 143.4%;
+        letter-spacing: 0.07em;
+        color: #ffffff;
+      }
+
+      .description {
+        margin-top: 20px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.07em;
+        color: #ffffff;
+        opacity: 0.6;
+      }
+
+      .flex-container {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .flex-item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-basis: 45%;
+        padding: 30px;
+        border: 1px solid #e2b076;
+
+        .text-1 {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 23px;
+          line-height: 28px;
+          text-align: center;
+          letter-spacing: 0.24em;
+          color: #e2b076;
+        }
+
+        .text-2 {
+          margin-top: 10px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 22px;
+          text-align: center;
+          letter-spacing: 0.07em;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  //// desktop-1680 ////
+  @include mq("desktop-1680", $type: max) {
+    padding-top: 60px;
+    padding-bottom: 120px;
+
+    .container {
+      .right-box {
+        .subtitle {
+          font-size: 18px;
+          line-height: 120.4%;
+        }
+
+        .description {
+          font-size: 14px;
+          line-height: 22px;
+        }
+
+        .flex-item {
+          .text-1 {
+            font-size: 18px;
+            line-height: 22px;
+          }
+
+          .text-2 {
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  //// desktop ////
+  @include mq("desktop", $type: max) {
+    .container {
+      .right-box {
+        .subtitle {
+          font-size: 16px;
+          line-height: 120.4%;
+        }
+
+        .description {
+          font-size: 12px;
+          line-height: 20px;
+        }
+
+        .flex-container {
+          margin-top: 30px;
+        }
+
+        .flex-item {
+          padding: 20px;
+          .text-1 {
+            font-size: 16px;
+            line-height: 22px;
+          }
+
+          .text-2 {
+            font-size: 14px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  //// tablet-wide ////
+  @include mq("tablet-wide", $type: max) {
+    padding-top: 30px;
+    padding-bottom: 90px;
+
+    .container {
+      flex-direction: column-reverse;
+
+      .left-box,
+      .right-box {
+        flex-basis: 100%;
+      }
+
+      .left-box {
+        max-width: 540px;
+        margin: 0 auto;
+        margin-top: 50px;
+
+        .image-container {
+          img {
+            top: -10px;
+            left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  //// phablet ////
+  @include mq("phablet", $type: max) {
+    .container {
+      .right-box {
+        .flex-container {
+          margin-top: 30px;
+        }
+
+        .subtitle {
+          font-size: 18px;
+        }
+
+        .description {
+          font-size: 14px;
+        }
+
+        .flex-item {
+          flex-basis: 48%;
+        }
+      }
+    }
+  }
+
+  //// phone-wide ////
+  @include mq("phone-wide", $type: max) {
+    .container {
+      .right-box {
+        .flex-container {
+          margin-top: 30px;
+        }
+
+        .flex-item {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

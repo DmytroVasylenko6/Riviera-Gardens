@@ -1,0 +1,209 @@
+.section-reviews {
+  padding-top: 150px;
+  padding-bottom: 220px;
+  background: #171717;
+
+  .container {
+    max-width: unset;
+    padding: 0;
+    .title {
+      text-align: center;
+      margin-bottom: 85px;
+    }
+
+    .reviews-list {
+      position: relative;
+
+      z-index: 1;
+
+      &::after {
+        @include pseudo($pos: absolute);
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 15%;
+        z-index: 2;
+        background: linear-gradient(270deg, #171717 0%, hsla(0, 3%, 64%, 0));
+      }
+
+      &::before {
+        @include pseudo($pos: absolute);
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 15%;
+        z-index: 2;
+        background: linear-gradient(-270deg, #171717 0%, hsla(0, 1%, 57%, 0));
+      }
+
+      .slick-slide {
+        margin: 15px;
+      }
+
+      .slick-prev,
+      .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 3;
+
+        &::after {
+          @include pseudo();
+          width: 30px;
+          height: 60px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+
+      .slick-prev {
+        left: 90px;
+        &::after {
+          background-image: url("../assets/images/svg/slick-arrow-left.svg");
+        }
+      }
+
+      .slick-next {
+        right: 90px;
+
+        &::after {
+          background-image: url("../assets/images/svg/slick-arrow-right.svg");
+        }
+      }
+
+      .review-item {
+        padding: 40px 50px;
+        border: 1px solid #e2b076;
+
+        .info-author {
+          display: flex;
+        }
+
+        .avatar-image {
+          margin-right: 23px;
+          border-radius: 50%;
+          width: 66px;
+        }
+
+        .name-author {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 21px;
+          line-height: 143.4%;
+          letter-spacing: 0.07em;
+          color: #ffffff;
+        }
+
+        .raiting {
+          display: flex;
+          margin-top: 5px;
+          .star-icon {
+            &::after {
+              @include pseudo();
+              width: 17px;
+              height: 17px;
+              background-image: url("../assets/images/svg/star-icon.svg");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+          }
+        }
+
+        .review-content {
+          margin-top: 15px;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 143.4%;
+          letter-spacing: 0.07em;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  //// desktop-1680 ////
+  @include mq("desktop-1680", $type: max) {
+    .container {
+      .reviews-list {
+        .review-item {
+          padding: 30px 40px;
+
+          .name-author {
+            font-size: 18px;
+          }
+
+          .review-content {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  //// desktop-wide ////
+  @include mq("desktop-wide", $type: max) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .container {
+      .title {
+        margin-bottom: 45px;
+      }
+
+      .reviews-list {
+        .review-item {
+          padding: 20px 30px;
+
+          .review-content {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  //// tablet-wide ////
+  @include mq("tablet-wide", $type: max) {
+    .container {
+      .reviews-list {
+        .slick-prev,
+        .slick-next {
+          top: unset;
+          transform: unset;
+          bottom: -60px;
+
+          &::after {
+            width: 20px;
+            height: 40px;
+          }
+        }
+
+        .slick-prev {
+          left: 46%;
+        }
+
+        .slick-next {
+          right: 46%;
+        }
+      }
+    }
+  }
+
+  //// phablet ////
+  @include mq("phablet", $type: max) {
+    .container {
+      .reviews-list {
+        .slick-prev {
+          left: 40%;
+        }
+
+        .slick-next {
+          right: 40%;
+        }
+      }
+    }
+  }
+}

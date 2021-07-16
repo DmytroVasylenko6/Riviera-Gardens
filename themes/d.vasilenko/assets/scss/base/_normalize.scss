@@ -1,0 +1,77 @@
+* {
+  &,
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+  }
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border-radius: 0;
+
+  &:focus {
+    outline: none;
+  }
+
+  &[type="submit"] {
+    border: 0;
+    padding: 0;
+  }
+}
+
+textarea {
+  resize: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  border: 0;
+  background: unset;
+  border-radius: 0;
+  padding: 0;
+  color: #ffffff;
+
+  &:focus {
+    outline: none;
+  }
+}

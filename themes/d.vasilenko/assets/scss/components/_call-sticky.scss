@@ -1,0 +1,145 @@
+.call-fixed {
+  position: fixed;
+  bottom: 100px;
+  right: 0px;
+  z-index: 9999;
+  transform: translateX(70%);
+  transition: all $animation-duration $timing-function;
+
+  //// tablet-wide ////
+  @include mq("tablet-wide", $type: max) {
+    display: none;
+  }
+
+  &.is-active {
+    transition: all $animation-duration $timing-function;
+    transform: translateX(0%);
+  }
+
+  .text-container {
+    padding: 15px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #e2b076;
+    background: #171717;
+    transition: all $animation-duration $timing-function 0.2s;
+    opacity: 0;
+
+    &.is-active {
+      transition: all $animation-duration $timing-function 0.2s;
+      opacity: 1;
+    }
+
+    .text {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 143.4%;
+      letter-spacing: 0.07em;
+      color: #ffffff;
+    }
+
+    .button {
+      padding: 10px 10px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      max-width: 160px;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+  .call-image {
+    position: absolute;
+    left: -60px;
+    top: -1px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 102%;
+    width: 105px;
+    background: #171717;
+    border-radius: 50%;
+    transition: all $main-transition;
+
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-name: pulseButton;
+    animation-iteration-count: infinite;
+
+    cursor: pointer;
+
+    &.is-active {
+      animation-name: unset;
+      background: #e2b076;
+      box-shadow: 0px 8px 23px rgba(226, 176, 118, 0.5);
+    }
+  }
+  //   .pulse-button__rings {
+  //     border: 1px solid #e2b076;
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     bottom: 0;
+  //     right: 0;
+  //     height: auto;
+  //     width: auto;
+  //     border-radius: 50%;
+  //     animation-duration: 2s;
+  //     animation-name: pulse_1;
+  //     animation-iteration-count: infinite;
+  //     z-index: -1;
+  //   }
+
+  //   .pulse-button__rings:nth-child(2) {
+  //     animation-name: pulse_2;
+  //   }
+
+  //   .pulse-button__rings:nth-child(3) {
+  //     animation-name: pulse_3;
+  //   }
+}
+
+// @keyframes pulse_1 {
+//   from {
+//     opacity: 1;
+//     transform: scale(0.9, 0.9);
+//   }
+
+//   to {
+//     opacity: 0;
+//     transform: scale(1.3, 1.3);
+//   }
+// }
+
+// @keyframes pulse_2 {
+//   from {
+//     opacity: 1;
+//     transform: scale(0.8, 0.8);
+//   }
+
+//   to {
+//     opacity: 0;
+//     transform: scale(1.5, 1.5);
+//   }
+// }
+
+// @keyframes pulse_3 {
+//   from {
+//     opacity: 1;
+//     transform: scale(0.8, 0.8);
+//   }
+
+//   to {
+//     opacity: 0;
+//     transform: scale(1.7, 1.7);
+//   }
+// }

@@ -1,126 +1,35 @@
 
 //homepage slider
-if ($('html[dir="rtl"]').length) {
 
-  $('.js-home-slider').slick({
+  $('.js-reviews-slider').slick({
     infinite: true,
-    arrows: false,
-    slidesToShow: 7,
+    arrows: true,
+    slidesToShow: 4,
     slidesToScroll: 1,
     variableWidth: false,
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
     autoplay: true,
+    speed: 2000,
     autoplaySpeed: 3000,
-    rtl: true,
+    
     responsive: [
       {
-        breakpoint: 1248,
-        settings: {
-          slidesToShow: 6,
-          slidesToScroll: 1,
-        }
-      },
-    
-      {
-        breakpoint: 990,
-        settings: {
-          swipe: true,
-          slidesToShow: 4,
-          slidesToScroll: 1,
-        }
-      },
-
-      {
-        breakpoint: 640,
-        settings: {
-          swipe: true,
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      },
-
-      {
-        breakpoint: 480,
-        settings: {
-          swipe: true,
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
-
-    $('.js-feedback-slider').slick({
-    // infinite: true,
-    arrows: false,
-    slidesToShow: 4.5,
-    slidesToScroll: 1,
-    variableWidth: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    rtl: true,
-    responsive: [
-      {
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-        }
-      },
-    
-      {
-        breakpoint: 990,
+        breakpoint: 1681,
         settings: {
           slidesToShow: 3.5,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          swipe: true,
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
-  
-} else {
-  $('.js-home-slider').slick({
-    infinite: true,
-    arrows: false,
-    slidesToShow: 7,
-    slidesToScroll: 1,
-    variableWidth: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    rtl: false,
-    responsive: [
-      {
-        breakpoint: 1248,
-        settings: {
-          slidesToShow: 6,
-          slidesToScroll: 1,
         }
       },
     
       {
-        breakpoint: 990,
+        breakpoint: 1249,
         settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
+          slidesToShow: 3,
         }
       },
 
       {
-        breakpoint: 640,
+        breakpoint: 1025,
         settings: {
           swipe: true,
           slidesToShow: 3,
@@ -128,51 +37,16 @@ if ($('html[dir="rtl"]').length) {
         }
       },
 
-         {
-        breakpoint: 480,
+      {
+        breakpoint: 769,
         settings: {
           swipe: true,
           slidesToShow: 2,
           slidesToScroll: 1
-        }
-      }
-    ]
-  });
-
-    $('.js-feedback-slider').slick({
-    // infinite: true,
-    arrows: false,
-    slidesToShow: 4.5,
-    slidesToScroll: 1,
-    variableWidth: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    rtl: false,
-    responsive: [
-      {
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-        }
-      },
-    
-      {
-        breakpoint: 990,
-        settings: {
-          slidesToShow: 2.5,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
         }
       },
        {
-        breakpoint: 480,
+        breakpoint: 561,
         settings: {
           swipe: true,
           slidesToShow: 1,
@@ -182,6 +56,17 @@ if ($('html[dir="rtl"]').length) {
     ]
   });
 
-}
+  $('.js-hero-slider').slick({
+    infinite: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: false,
+    autoplay: false,
+    speed: 1000,
+    // autoplaySpeed: 3000,
+    
+  });
+
   
   
