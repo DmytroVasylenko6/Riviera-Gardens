@@ -23,6 +23,7 @@
         position: relative;
         width: calc((100% - 90px * 2) / 3);
         cursor: pointer;
+        flex-shrink: 0;
 
         &:not(:last-child) {
           margin-right: 90px;

@@ -1,6 +1,11 @@
 const documentsList = document.querySelector('.documents-list');
 const accordionButton = document.querySelector('.button-documents');
+const documentsButton = document.querySelector('.menu-item a[href="#documents"]');
 
+//click nav-item documents
+documentsButton.addEventListener('click', () => {
+  accordionButton.click()
+})
 
 accordionButton.addEventListener('click', function () {
   this.classList.toggle("active");

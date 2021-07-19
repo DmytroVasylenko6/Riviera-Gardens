@@ -37,6 +37,9 @@
 	$('.tabs-target').click(function(){
 		$('#tabs .tabs-nav a[href=' + $(this).data('id')+ ']').click();
 	});
+
+
+ 
 // });
 })(jQuery);
 

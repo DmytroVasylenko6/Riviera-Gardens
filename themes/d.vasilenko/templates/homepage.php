@@ -50,7 +50,7 @@ get_header();
         </div>
         <div>
             <span class="call-image" data-open-call>
-                <svg class="" width="42" height="42">
+                <svg class="" width="35" height="35">
                     <use href="<?= get_template_directory_uri().'/assets/images/svg/sprite.svg#icon-white-tel' ?>">
                     </use>
                 </svg>
@@ -62,14 +62,23 @@ get_header();
         </div>
     </div>
 
-    <div class="lightbox js-lightbox">
+    <div class="lightbox js-lightbox container">
         <div class="lightbox__overlay"></div>
 
         <div class="lightbox__content">
-            <button type="button" class="lightbox__button" data-action="close-lightbox"></button>
-            <h2 class="title">У Вас есть вопросы?</h2>
-            <p class="description">Оставьте Ваш номер и мы свяжемся с Вами в ближайшее время!</p>
-            <?= do_shortcode('[contact-form-7 id="98" title="Contact form call"]') ?>
+
+            <div class="call" data-form-call>
+                <button type="button" class="lightbox__button" data-action="close-lightbox"></button>
+                <h2 class="title">У Вас есть вопросы?</h2>
+                <p class="description">Оставьте Ваш номер и мы свяжемся с Вами в ближайшее время!</p>
+                <?= do_shortcode('[contact-form-7 id="98" title="Contact form call"]') ?>
+            </div>
+            <div class="layouts" data-form-layouts>
+                <button type="button" class="lightbox__button" data-action="close-lightbox"></button>
+                <h2 class="title">Получить планировки</h2>
+                <p class="description">Оставьте Ваш номер и мы свяжемся с Вами в ближайшее время!</p>
+                <?= do_shortcode('[contact-form-7 id="152" title="Contact form get layouts"]') ?>
+            </div>
         </div>
 
     </div>

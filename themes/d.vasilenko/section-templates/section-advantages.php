@@ -9,7 +9,7 @@
 
 ?>
 
-<section class="section-advantages">
+<section class="section-advantages" id="tab-location">
     <div class="container">
         <h2 class="title"><?=$args['title']?></h2>
         <div id="tabs">

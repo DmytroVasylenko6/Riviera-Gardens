@@ -32,4 +32,7 @@
             </div>
         </div>
     </div>
+    <button class="contact-button button js-layouts" style="margin: 0 auto; display: block; margin-top: 60px;"
+        data-open-form>Получить
+        планировки</button>
 </section>

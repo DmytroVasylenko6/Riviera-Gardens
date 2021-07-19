@@ -9,8 +9,8 @@
 
 ?>
 
-<section class="section-documents">
-    <div class="container">
+<section class="section-documents" id="documents">
+    <div class="container" id="contact-us">
         <h2 class="title"><?= $args['title']?></h2>
 
         <ul class="documents-list js_documents_gallery">
@@ -18,7 +18,7 @@
             <?php foreach ($args['documents'] as $document) :?>
             <li class="document-item" data-index="<?=$i++ ?>">
                 <div class="image-container">
-                    <img loading="lazy" class="document-image" src="<?= $document['document_image']?>" alt="document-image">
+                    <img class="document-image" src="<?= $document['document_image']?>" alt="document-image">
                 </div>
                 <div class="description-container">
                     <p class="document-decription"><?= $document['document_description']?></p>

@@ -2,7 +2,7 @@ import './modules/slik-slider';
 import './modules/svgxuse';
 import './modules/header-compact';
 import './modules/mobile-menu';
-import './modules/modal-call';
+import './modules/modal-call-and-layouts';
 import './modules/accordion';
 import './modules/inputMask';
 import './modules/hero-section-swiper';
@@ -32,6 +32,12 @@ function handler(event) {
   }
 }
 
+//click nav-item location
+const locationButton = document.querySelector('.menu-item a[href="#tab-location"]')
+const tabLocation = document.querySelector('a[href="#tab-3"]')
+  locationButton.addEventListener('click', (e) => {
+   tabLocation.click()
+  })
 
 
 
