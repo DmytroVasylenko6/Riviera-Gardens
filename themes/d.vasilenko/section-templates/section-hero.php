@@ -14,7 +14,7 @@
         <ul class="swiper-wrapper">
             <li class="hero-slider-item swiper-slide">
 
-                <div class="container">
+                <div class="container" data-title>
                     <p class="subtitle"><?= $args['subtitle']?></p>
                     <h1 class="hero-title"><?= $args['title']?></h1>
                 </div>
