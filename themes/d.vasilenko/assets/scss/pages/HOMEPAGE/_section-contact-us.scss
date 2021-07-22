@@ -241,4 +241,10 @@
       }
     }
   }
+
+  //// phone-wide ////
+  @include mq("phone-wide", $type: max) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }

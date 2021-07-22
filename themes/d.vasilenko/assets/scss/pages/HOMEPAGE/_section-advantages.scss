@@ -109,6 +109,11 @@
         text-transform: uppercase;
         text-align: left;
         color: #e2b076;
+
+        //// phone-wide ////
+        @include mq("phone-wide", $type: max) {
+          font-size: 18px;
+        }
       }
 
       .description {

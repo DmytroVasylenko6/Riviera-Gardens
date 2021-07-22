@@ -31,7 +31,7 @@
       {
         breakpoint: 1025,
         settings: {
-          swipe: true,
+          // swipe: true,
           slidesToShow: 3,
           slidesToScroll: 1
         }
@@ -40,7 +40,7 @@
       {
         breakpoint: 769,
         settings: {
-          swipe: true,
+          // swipe: true,
           slidesToShow: 2,
           slidesToScroll: 1
         }
@@ -48,7 +48,7 @@
        {
         breakpoint: 561,
         settings: {
-          swipe: true,
+          // swipe: true,
           slidesToShow: 1,
           slidesToScroll: 1
         }
@@ -56,17 +56,17 @@
     ]
   });
 
-  $('.js-hero-slider').slick({
-    infinite: true,
-    arrows: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    variableWidth: false,
-    autoplay: false,
-    speed: 1000,
-    // autoplaySpeed: 3000,
+  // $('.js-hero-slider').slick({
+  //   infinite: true,
+  //   arrows: false,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   variableWidth: false,
+  //   autoplay: false,
+  //   speed: 1000,
+  //   // autoplaySpeed: 3000,
     
-  });
+  // });
 
   
   

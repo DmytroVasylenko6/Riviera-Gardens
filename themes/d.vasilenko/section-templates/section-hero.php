@@ -33,7 +33,7 @@
                 <div class="container">
                     <div class="text-container" data-text-container>
                         <div class="subtitle"><?= $slider['subtitle']?></div>
-                        <h1 class="hero-title"><?=$slider['title']?></h1>
+                        <div class="hero-title"><?=$slider['title']?></div>
                         <button class="button hero-button" data-open-form>Подробнее</button>
                         <p class="hero-text"><?= $slider['footer_text']?></p>
                     </div>
