@@ -48,8 +48,6 @@
         crossorigin>
 
 
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXZ7bM6hDwHCCJFxkyP0nE4iGliyuS_E8&callback=initMap"> -->
-
     <?php wp_head(); ?>
 
 </head>

@@ -112,15 +112,13 @@
     }
 
     .right-box {
+      border: 1px solid #e2b076;
       .map-container {
         height: 100%;
-        border: 1px solid #e2b076;
-        iframe {
-          width: 100%;
-          position: relative;
-          top: -20px;
-          left: -20px;
-        }
+        width: 100%;
+        position: relative;
+        top: -20px;
+        left: -20px;
       }
     }
   }
@@ -234,10 +232,9 @@
         margin-top: 40px;
 
         .map-container {
-          iframe {
-            top: -10px;
-            left: -10px;
-          }
+          height: 500px;
+          top: -10px;
+          left: -10px;
         }
       }
     }
@@ -247,5 +244,12 @@
   @include mq("phone-wide", $type: max) {
     padding-top: 50px;
     padding-bottom: 50px;
+    .container {
+      .right-box {
+        .map-container {
+          height: 300px;
+        }
+      }
+    }
   }
 }
