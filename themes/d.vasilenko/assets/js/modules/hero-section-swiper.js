@@ -9,7 +9,7 @@ const swiper = new Swiper(".mySwiper", {
   lazy: true,
   watchSlidesVisibility: true,
   autoplay: {
-           delay: 4000,
+           delay: 4500,
       },
   pagination: {
     el: ".swiper-pagination",

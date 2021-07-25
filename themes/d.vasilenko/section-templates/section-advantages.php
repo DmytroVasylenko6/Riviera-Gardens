@@ -28,7 +28,7 @@
                 <?php foreach($args['tabs'] as $tab) :?>
                 <div class="tabs-item" id="tab-<?=$i?>">
                     <div class="left-box">
-                        <img loading="lazy" src="<?=$tab['image']?>" alt="">
+                        <img loading="lazy" src="<?=$tab['image']?>" alt="advantages-info">
                     </div>
                     <div class="right-box">
                         <h3 class="title"><?=$tab['title']?></h3>

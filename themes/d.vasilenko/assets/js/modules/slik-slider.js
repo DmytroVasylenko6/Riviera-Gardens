@@ -56,17 +56,14 @@
     ]
   });
 
-  // $('.js-hero-slider').slick({
-  //   infinite: true,
-  //   arrows: false,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   variableWidth: false,
-  //   autoplay: false,
-  //   speed: 1000,
-  //   // autoplaySpeed: 3000,
-    
-  // });
+$('.js-reviews-slider').on('setPosition', function () {	
+    $(this).find('.review-item').height('auto');		      
+    var slickTrack = $(this).find('.slick-track');		      
+    var slickTrackHeight = $(slickTrack).height();		      
+    $(this).find('.review-item').css('height', slickTrackHeight + 'px');		      
+  });	
+
+
 
   
   

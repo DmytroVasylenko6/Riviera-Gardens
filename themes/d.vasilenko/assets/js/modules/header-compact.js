@@ -5,7 +5,7 @@ function scrollFunction() {
    if (window.screen.width <= 1024 ) {
     return
   }
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50 ) {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200 ) {
     menuHeader.classList.add('compact')
   } else {
     menuHeader.classList.remove('compact')

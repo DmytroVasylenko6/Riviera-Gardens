@@ -31,11 +31,7 @@
             </div>
         </div>
         <div class="right-box">
-            <div class="map-container" id="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d685.7867589181154!2d30.831364594582826!3d46.564557584376495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63b1d6635021b%3A0xf578433c523af496!2z0LLRg9C7LiDQp9C10YXQvtCy0LAsINCe0LTQtdGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1626008664340!5m2!1sru!2sua"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+            <div class="map-container" id="map"></div>
         </div>
 
     </div>

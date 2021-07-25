@@ -14,7 +14,7 @@
         <ul class="swiper-wrapper">
             <li class="hero-slider-item swiper-slide">
 
-                <div class="container" data-title>
+                <div class="container first-banner" data-title>
                     <p class="subtitle"><?= $args['subtitle']?></p>
                     <h1 class="hero-title"><?= $args['title']?></h1>
                 </div>
@@ -34,8 +34,8 @@
                     <div class="text-container" data-text-container>
                         <div class="subtitle"><?= $slider['subtitle']?></div>
                         <div class="hero-title"><?=$slider['title']?></div>
-                        <button class="button hero-button" data-open-form>Подробнее</button>
                         <p class="hero-text"><?= $slider['footer_text']?></p>
+                        <button class="button hero-button" data-open-form>Подробнее</button>
                     </div>
                 </div>
 

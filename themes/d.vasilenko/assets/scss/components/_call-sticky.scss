@@ -40,6 +40,16 @@
       line-height: 143.4%;
       letter-spacing: 0.07em;
       color: #ffffff;
+      margin-bottom: 5px;
+    }
+
+    .subtext {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 120.4%;
+      letter-spacing: 0.07em;
+      color: #ffffff;
     }
 
     .button {
@@ -65,7 +75,7 @@
     align-items: center;
     justify-content: center;
     height: 102%;
-    width: 90px;
+    width: 105px;
     background: #171717;
     border-radius: 50%;
     transition: all $main-transition;

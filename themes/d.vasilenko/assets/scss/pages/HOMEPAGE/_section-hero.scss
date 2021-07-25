@@ -1,4 +1,5 @@
 .section-hero {
+  position: relative;
   .swiper-container {
     position: relative;
     width: 100%;
@@ -72,36 +73,40 @@
     }
   }
 
+  .first-banner {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 220px;
+
+    .subtitle::after {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      content: "";
+      height: 50%;
+      width: 100%;
+      border-radius: 50px;
+
+      background: radial-gradient(#1110106b, #df02cd05);
+    }
+  }
+
   .container {
-    position: relative;
+    height: auto;
     z-index: 2;
 
     .hero-title {
       font-style: normal;
       font-weight: bold;
-      font-size: 143px;
+      font-size: 85px;
+      letter-spacing: 1rem;
       line-height: 174px;
       text-align: center;
 
       color: #fafafa;
-      // background: -webkit-linear-gradient(
-      //   180deg,
-      //   rgb(255, 255, 255) 62%,
-      //   rgb(176, 187, 214)
-      // );
-      // background: -moz-linear-gradient(
-      //   180deg,
-      //   rgb(255, 255, 255) 62%,
-      //   rgb(176, 187, 214)
-      // );
-      // background: linear-gradient(
-      //   180deg,
-      //   rgb(255, 255, 255) 62%,
-      //   rgb(176, 187, 214)
-      // );
-
-      // -webkit-background-clip: text;
-      // -webkit-text-fill-color: transparent;
     }
 
     .subtitle {
@@ -366,13 +371,19 @@
       }
     }
 
+    .first-banner {
+      bottom: 120px;
+    }
+
     .container {
       .hero-title {
         font-size: 65px;
         line-height: 75px;
+        letter-spacing: 0.5rem;
       }
 
       .subtitle {
+        position: relative;
         font-size: 14px;
         line-height: 22px;
       }
@@ -382,6 +393,7 @@
       .hero-title {
         font-size: 28px;
         line-height: 38px;
+        letter-spacing: unset;
       }
 
       .subtitle {
@@ -494,6 +506,9 @@
 
   //// phone-wide ////
   @include mq("phone-wide", $type: max) {
+    .container {
+      transition: all 100ms $timing-function;
+    }
     .swiper-container {
       .hero-slider-item {
         padding-top: 30px;
@@ -503,7 +518,8 @@
         padding-top: 60px;
       }
     }
-    .container {
+
+    .container.first-banner {
       .hero-title {
         font-size: 50px;
         line-height: 48px;
@@ -512,6 +528,9 @@
       .subtitle {
         font-size: 10px;
         line-height: 20px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 28px;
       }
     }
 

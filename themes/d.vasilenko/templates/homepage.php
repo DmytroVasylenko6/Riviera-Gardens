@@ -45,7 +45,8 @@ get_header();
 
     <div class="call-fixed">
         <div class="text-container" data-text-call>
-            <p class="text">У Вас есть вопросы?</p>
+            <p class="text">У Вас появились вопросы?</p>
+            <p class="subtext">Мы перезвоним Вам в самое ближайшее время!</p>
             <button class="button" data-open-form>Оставить номер</button>
         </div>
         <div>
@@ -69,14 +70,14 @@ get_header();
 
             <div class="call" data-form-call>
                 <button type="button" class="lightbox__button" data-action="close-lightbox"></button>
-                <h2 class="title">У Вас есть вопросы?</h2>
-                <p class="description">Оставьте Ваш номер и мы свяжемся с Вами в ближайшее время!</p>
+                <h2 class="title">У вас появились вопросы?</h2>
+                <p class="description">Оставьте телефон и мы перезвоним Вам в ближайшее время!</p>
                 <?= do_shortcode('[contact-form-7 id="98" title="Contact form call"]') ?>
             </div>
             <div class="layouts" data-form-layouts>
                 <button type="button" class="lightbox__button" data-action="close-lightbox"></button>
                 <h2 class="title">Получить планировки</h2>
-                <p class="description">Оставьте Ваш номер и мы свяжемся с Вами в ближайшее время!</p>
+                <p class="description">Оставьте телефон и мы перезвоним Вам в ближайшее время!</p>
                 <?= do_shortcode('[contact-form-7 id="152" title="Contact form get layouts"]') ?>
             </div>
         </div>

@@ -44,7 +44,7 @@
     </div>
 </footer><!-- #colophon -->
 </div><!-- #page -->
-</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN5-03Ee9P53MWdeeltsF1oIDMKFKyCJw"></script>
 <?php wp_footer(); ?>
 
 </body>

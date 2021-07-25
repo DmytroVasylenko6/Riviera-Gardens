@@ -9,6 +9,7 @@ import './modules/hero-section-swiper';
 import './modules/documents-gallery';
 import './modules/tabs';
 import './modules/parallaxScroll';
+import './modules/map';
 
 //open Call
 const openCall = document.querySelector('[data-open-call]');
@@ -42,33 +43,9 @@ const tabLocation = document.querySelector('a[href="#tab-3"]')
 
 
 
-// function initMap() {
-//     var coordinates = {lat: 46.5642009, lng: 30.8281498},
 
-//         map = new google.maps.Map(document.querySelector('#map'), {
-//             center: coordinates
-//         }),
-    
-//         marker = new google.maps.Marker({
-//             position: coordinates,
-//             map: map
-//         });
 
-// map.setOptions({styles: [
-//     {
-//         "featureType": "administrative.country",
-//         "elementType": "geometry",
-//         "stylers": [
-//             {
-//                 "visibility": "simplified"
-//             },
-//             {
-//                 "hue": "#ff0000"
-//             }
-//         ]
-//     }
-// ]});
-// }
+
 
 
 
